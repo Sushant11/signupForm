@@ -20,19 +20,19 @@ body {
 
 .intro {
   /* padding: 2rem; */
-  width: 45%;
+  width: 38rem;
 }
 
 .intro-main {
   font-weight: 700;
-  font-size: 2.5rem;
-  width: 78%;
+  font-size: 3rem;
+  width: 34rem;
   margin: auto;
 }
 .intro-sec {
   font-weight: 500;
   font-size: 1rem;
-  width: 78%;
+  width: 34rem;
   margin: auto;
   color: #ffffffb8;
   margin-top: 16px;
@@ -40,16 +40,16 @@ body {
 
 .form {
   /* padding: 2rem; */
-  width: 38%;
+  width: 38rem;
   padding: 10px;
-  height: 65%;
+  height: 34rem;
 }
 .form-info {
   background-color: hsl(249, 47%, 55%);
   padding: 1em;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0px 8px 0px #00000030;
+  box-shadow: 0px 6px 0px #00000030;
 }
 .form-info span {
   font-weight: 600;
@@ -61,40 +61,112 @@ body {
   padding: 20px;
   height: 26rem;
   border-radius: 8px;
-  box-shadow: 0px 8px 0px #00000030;
+  box-shadow: 0px 6px 0px #00000030;
 }
 
-input{
-    border: 1px solid rgb(214, 214, 214);
-    margin: .8rem .8rem;
-    padding: 1rem 2rem;
-    border-radius: 6px;
-    font-size: 14px;
-    width: 81%;
-    font-weight: 600 !important;
+input {
+  border: 1px solid rgb(214, 214, 214);
+  margin: 0.8rem 0.6rem;
+  padding: 1rem 2rem;
+  color: hsl(249, 10%, 26%);
+  border-radius: 6px;
+  font-size: 16px;
+  width: 30rem;
+  font-weight: 600 !important;
 }
 
-button{
-    background-color: hsl(154, 59%, 51%);
-    border: none;
-    padding: 1rem;
-    color: white !important;
-    font-weight: 600;
-    font-size: 14px;
-    border-radius: 6px;
-    width: 94.5%;
-    text-transform: uppercase;
-    margin-top: 10px;
-    margin-left: 13px;
+input:focus {
+  border: 1px solid hsl(249, 47%, 55%);
+  outline: none;
+}
+button {
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  padding: 1rem;
+  color: white !important;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 6px;
+  width: 34rem;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-left: 13px;
+  box-shadow: 0px 4px 0px hsl(140, 35%, 53%);
 }
 
-.terms{
-    font-size: 12px;
+button:hover {
+  background-color: hsl(154, 67%, 57%);
+}
+button:focus {
+  outline: none;
+}
+
+.terms {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.terms span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+footer {
+  margin-top: -1rem;
+}
+
+@media only screen and (max-width: 1234px) {
+  .intro {
     text-align: center;
-    margin-top: 12px;
+  }
+  .intro-main {
+    font-size: 2rem;
+    width: 20rem;
+  }
+  footer {
+    margin-top: 0rem;
+  }
 }
 
-.terms span{
-    color: hsl(0, 100%, 74%) ;
-    font-weight: 600;
+@media only screen and (max-width: 700px) {
+  .form {
+    width: 28rem;
+  }
+  input {
+    width: 20rem;
+  }
+  button {
+    width: 24rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .intro {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+  }
+  .intro-sec {
+    width: 20rem;
+    margin: auto;
+    font-size: 14px;
+  }
+  .intro-main {
+    font-size: 1.5rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+  }
+  .form {
+    width: 20rem;
+    margin-bottom: 2rem;
+  }
+  input {
+    width: 12rem;
+  }
+  button {
+    width: 16rem;
+  }
+  footer {
+    display: none;
+  }
 }
