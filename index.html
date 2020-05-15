@@ -41,11 +41,13 @@
           <span>Try it free 7 days </span>then $20/mo. thereafter
         </div>
         <div class="form-main">
-          <input placeholder="First Name" />
-          <input placeholder="Last Name" />
-          <input placeholder="Email Address" />
-          <input placeholder="Password" />
-          <button>Claim your free trial</button>
+          <form>
+          <input placeholder="First Name" type='text' id="fName"/>
+          <input placeholder="Last Name" type='text' id="lName"/>
+          <input placeholder="Email Address" type="email" id="email" />
+          <input placeholder="Password" type="password" id="password"/>
+          <button type="submit" onclick="return handleSubmit()" id="button">Claim your free trial</button>
+        </form>
           <div class="terms">
             By clicking the button, you are agreeing to our
             <span>Terms and Services</span>
@@ -62,5 +64,7 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
