@@ -5,19 +5,34 @@ function handleSubmit() {
     let email = document.getElementById('email').value
     let password = document.getElementById('password').value
 
-    if (fName === '') {
-        document.getElementById('fName').classList.add('error')
-    }
-    else if (lName === '') {
-        document.getElementById('lName').classList.add('error')
-    } else if (email === '') {
-        document.getElementById('email').classList.add('error')
-    }
-    else if (password === '') {
-        document.getElementById('password').classList.add('error')
-    }
-    else {
-        return null;
-    }
+    const fnameInput = document.getElementById('fName')
+    const lnameInput = document.getElementById('lName')
+    const emailInput = document.getElementById('email')
+    const passwordInput = document.getElementById('password')
 
+    if (fName === '') {
+        console.log('fName :>> ', fName);
+        fnameInput.classList.add('error')
+    }
+    else{
+        fnameInput.classList.remove('error')
+    }
+    if (lName === '') {
+        lnameInput.classList.add('error')
+    }
+    else{
+        lnameInput.classList.remove('error')
+    }
+    if (email === '') {
+        emailInput.classList.add('error')
+    }
+    else{
+        emailInput.classList.remove('error')
+    }
+    if (password === '') {
+        passwordInput.classList.add('error')
+    }
+    else{
+        passwordInput.classList.remove('error')
+    }
 }
